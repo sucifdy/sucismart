@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-0 py-0 transition duration-300">
+<div class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-0 py-0
+
+transition duration-300">
     <div class="max-w-5xl mx-auto">
 
         {{-- Header --}}
