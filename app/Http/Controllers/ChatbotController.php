@@ -26,7 +26,7 @@ class ChatbotController extends Controller
 
         // Kirim ke Hugging Face Phi 3.5 Instruct
         $response = Http::withHeaders([
-            'Authorization' => 'Bearer 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', // Ganti dengan token kamu
+            'Authorization' => 'Bearer '. env("HUGGINGFACE_API_TOKEN"), // Ganti dengan token kamu
             'Content-Type' => 'application/json',
         ])->post('https://api-inference.huggingface.co/models/microsoft/Phi-3.5-mini-instruct', [
             'inputs' => "<|user|>\n{$userMessage}\n<|assistant|>\n",
